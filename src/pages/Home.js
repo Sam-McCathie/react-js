@@ -9,6 +9,9 @@ const Home = () => {
         <li>
           <Link to="state">State</Link>
         </li>
+        <li>
+          <Link to="forms">Forms</Link>
+        </li>
       </ul>
     </div>
   );
