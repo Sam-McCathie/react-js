@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 
 const Updating = () => {
   // correctly updating state with an existing value
@@ -33,15 +34,17 @@ const Updating = () => {
 
   return (
     <div>
+      <Link to={"/state"}>Back</Link> <Link to={"/"}>Home</Link>
       <h1>Updating State</h1>
+      <p>View code for method..</p>
       <div style={{display: "flex"}}>
         <button onClick={subtract}>-</button>
         {count}
         <button onClick={add}>+</button>
       </div>
-
       <hr />
       <h1>Updating a state object</h1>
+      <p>Type below...</p>
       <form>
         <input
           type="text"

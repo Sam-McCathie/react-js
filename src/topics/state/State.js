@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 const State = () => {
   return (
     <div>
+      <Link to={"/"}>Back/ Home</Link>
       <h1>State</h1>
       <ul>
         <li>
