@@ -23,11 +23,14 @@ const Updating = () => {
 
   // using the same function for both first & last name
   const handleNames = (event) => {
+    const {name, value} = event.target;
+    // instead of event.target.name & event.target.value,
+
     // current state value assigned to prevFormData
     setNames((prevFormData) => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value,
+        [name]: value,
       };
     });
   };
