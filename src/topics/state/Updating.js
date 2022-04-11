@@ -34,7 +34,7 @@ const Updating = () => {
 
   return (
     <div>
-      <Link to={"/state"}>Back</Link> <Link to={"/"}>Home</Link>
+      <Link to={"/state"}>Back</Link> | <Link to={"/"}>Home</Link>
       <h1>Updating State</h1>
       <p>View code for method..</p>
       <div style={{display: "flex"}}>
