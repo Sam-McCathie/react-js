@@ -6,6 +6,7 @@ import State from "./topics/state/State";
 import Updating from "./topics/state/Updating";
 import ConditionalRendering from "./topics/state/Conditional-Rendering";
 import Form from "./topics/forms/Forms";
+import Api from "./topics/Api/Api";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         />
 
         <Route path="/forms" element={<Form />} />
+        <Route path="/api" element={<Api />} />
       </Routes>
     </BrowserRouter>
   );
