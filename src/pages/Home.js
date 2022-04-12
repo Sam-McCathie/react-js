@@ -15,6 +15,9 @@ const Home = () => {
         <li>
           <Link to="api">Api</Link>
         </li>
+        <li>
+          <Link to="event-listeners">Event Listeners</Link>
+        </li>
       </ul>
     </div>
   );

@@ -7,6 +7,7 @@ import Updating from "./topics/state/Updating";
 import ConditionalRendering from "./topics/state/Conditional-Rendering";
 import Form from "./topics/forms/Forms";
 import Api from "./topics/Api/Api";
+import EventListeners from "./topics/event-listeners/EventListeners";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
         <Route path="/forms" element={<Form />} />
         <Route path="/api" element={<Api />} />
+        <Route path="/event-listeners" element={<EventListeners />} />
       </Routes>
     </BrowserRouter>
   );
