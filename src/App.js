@@ -10,6 +10,7 @@ import Classes from "./topics/classes/classes";
 import Hooks from "./topics/hooks/hooks";
 import UseReducer from "./topics/hooks/useReducer";
 import UseState from "./topics/hooks/useState";
+import Basics from "./topics/classes/basics";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/api" element={<Api />} />
         <Route path="/event-listeners" element={<EventListeners />} />
         <Route path="/classes" element={<Classes />} />
+        <Route path="/classes/basics" element={<Basics />} />
       </Routes>
     </BrowserRouter>
   );
