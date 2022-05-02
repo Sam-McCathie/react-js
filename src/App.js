@@ -2,15 +2,14 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import "./App.css";
 
 import Home from "./pages/Home";
-import State from "./topics/state/State";
-import Updating from "./topics/state/Updating";
-import ConditionalRendering from "./topics/state/Conditional-Rendering";
+import ConditionalRendering from "./topics/conditional-rendering/Conditional-Rendering";
 import Form from "./topics/forms/Forms";
 import Api from "./topics/Api/Api";
 import EventListeners from "./topics/event-listeners/EventListeners";
 import Classes from "./topics/classes/classes";
 import Hooks from "./topics/hooks/hooks";
 import UseReducer from "./topics/hooks/useReducer";
+import UseState from "./topics/hooks/useState";
 
 function App() {
   return (
@@ -19,10 +18,9 @@ function App() {
         <Route path="/" index element={<Home />} />
         <Route path="/hooks" element={<Hooks />} />
         <Route path="/hooks/useReducer" element={<UseReducer />} />
-        <Route path="/state" element={<State />} />
-        <Route path="/state/updating" element={<Updating />} />
+        <Route path="/hooks/useState" element={<UseState />} />
         <Route
-          path="/state/conditional-rendering"
+          path="/conditional-rendering"
           element={<ConditionalRendering />}
         />
         <Route path="/forms" element={<Form />} />

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
-const Updating = () => {
+const UseState = () => {
   // correctly updating state with an existing value
   const [count, setCount] = useState(0);
 
@@ -34,11 +34,10 @@ const Updating = () => {
       };
     });
   };
-
   return (
     <div>
-      <Link to={"/state"}>Back</Link> | <Link to={"/"}>Home</Link>
-      <h1>Updating State</h1>
+      <Link to="/hooks">Back</Link> | <Link to="/">Back/ Home</Link>
+      <h1>useState</h1>
       <p>View code for method..</p>
       <div style={{display: "flex"}}>
         <button onClick={subtract}>-</button>
@@ -69,4 +68,4 @@ const Updating = () => {
   );
 };
 
-export default Updating;
+export default UseState;

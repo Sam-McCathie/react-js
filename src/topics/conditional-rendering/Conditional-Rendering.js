@@ -11,7 +11,7 @@ const ConditionalRendering = () => {
 
   return (
     <div>
-      <Link to="/state">Back</Link> | <Link to="/">Home</Link>
+      <Link to="/">Back/ Home</Link>
       <h1>Conditional-Rendering</h1>
       <button onClick={handleToggle}>{toggle ? "Hide" : "Show"}</button>
       {toggle && <p>Using && ... or</p>}

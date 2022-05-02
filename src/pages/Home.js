@@ -10,7 +10,7 @@ const Home = () => {
           <Link to="hooks">Hooks</Link>
         </li>
         <li>
-          <Link to="state">State</Link>
+          <Link to="conditional-rendering">Conditional Rendering</Link>
         </li>
         <li>
           <Link to="forms">Forms</Link>
