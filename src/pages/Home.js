@@ -18,6 +18,9 @@ const Home = () => {
         <li>
           <Link to="event-listeners">Event Listeners</Link>
         </li>
+        <li>
+          <Link to="classes">Classes</Link>
+        </li>
       </ul>
     </div>
   );

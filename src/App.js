@@ -8,6 +8,7 @@ import ConditionalRendering from "./topics/state/Conditional-Rendering";
 import Form from "./topics/forms/Forms";
 import Api from "./topics/Api/Api";
 import EventListeners from "./topics/event-listeners/EventListeners";
+import Classes from "./topics/classes/classes";
 
 function App() {
   return (
@@ -20,10 +21,10 @@ function App() {
           path="/state/conditional-rendering"
           element={<ConditionalRendering />}
         />
-
         <Route path="/forms" element={<Form />} />
         <Route path="/api" element={<Api />} />
         <Route path="/event-listeners" element={<EventListeners />} />
+        <Route path="/classes" element={<Classes />} />
       </Routes>
     </BrowserRouter>
   );
