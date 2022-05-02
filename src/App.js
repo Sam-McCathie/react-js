@@ -9,12 +9,16 @@ import Form from "./topics/forms/Forms";
 import Api from "./topics/Api/Api";
 import EventListeners from "./topics/event-listeners/EventListeners";
 import Classes from "./topics/classes/classes";
+import Hooks from "./topics/hooks/hooks";
+import UseReducer from "./topics/hooks/useReducer";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" index element={<Home />} />
+        <Route path="/hooks" element={<Hooks />} />
+        <Route path="/hooks/useReducer" element={<UseReducer />} />
         <Route path="/state" element={<State />} />
         <Route path="/state/updating" element={<Updating />} />
         <Route
