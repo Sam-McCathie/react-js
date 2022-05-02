@@ -36,7 +36,7 @@ const UseState = () => {
   };
   return (
     <div>
-      <Link to="/hooks">Back</Link> | <Link to="/">Back/ Home</Link>
+      <Link to="/hooks">Back</Link> | <Link to="/">Home</Link>
       <h1>useState</h1>
       <p>View code for method..</p>
       <div style={{display: "flex"}}>
