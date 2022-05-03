@@ -11,6 +11,9 @@ import Hooks from "./topics/hooks/hooks";
 import UseReducer from "./topics/hooks/useReducer";
 import UseState from "./topics/hooks/useState";
 import Basics from "./topics/classes/basics";
+import FunctionalVsClass from "./topics/classes/functional-vs-class";
+import ClassStateNew from "./topics/classes/class-state-new";
+import ClassStateOld from "./topics/classes/class-state-old";
 
 function App() {
   return (
@@ -29,6 +32,12 @@ function App() {
         <Route path="/event-listeners" element={<EventListeners />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/classes/basics" element={<Basics />} />
+        <Route
+          path="/classes/functional-vs-class"
+          element={<FunctionalVsClass message="I am a prop" />}
+        />
+        <Route path="/classes/state/new" element={<ClassStateNew />} />
+        <Route path="/classes/state/old" element={<ClassStateOld />} />
       </Routes>
     </BrowserRouter>
   );
