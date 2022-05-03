@@ -14,6 +14,10 @@ import Basics from "./topics/classes/basics";
 import FunctionalVsClass from "./topics/classes/functional-vs-class";
 import ClassStateNew from "./topics/classes/class-state-new";
 import ClassStateOld from "./topics/classes/class-state-old";
+import ClassComplexState from "./topics/classes/class-complex-state";
+import ComponentDidMount from "./topics/classes/component-did-mount";
+import ComponentDidUpdate from "./topics/classes/component-did-update";
+import ComponentDidUnmount from "./topics/classes/component-did-unmount";
 
 function App() {
   return (
@@ -38,6 +42,19 @@ function App() {
         />
         <Route path="/classes/state/new" element={<ClassStateNew />} />
         <Route path="/classes/state/old" element={<ClassStateOld />} />
+        <Route path="/classes/state/complex" element={<ClassComplexState />} />
+        <Route
+          path="/classes/component-did-mount"
+          element={<ComponentDidMount />}
+        />
+        <Route
+          path="/classes/component-did-update"
+          element={<ComponentDidUpdate />}
+        />
+        <Route
+          path="/classes/component-did-unmount"
+          element={<ComponentDidUnmount />}
+        />
       </Routes>
     </BrowserRouter>
   );
