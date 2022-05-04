@@ -18,6 +18,8 @@ import ClassComplexState from "./topics/classes/class-complex-state";
 import ComponentDidMount from "./topics/classes/component-did-mount";
 import ComponentDidUpdate from "./topics/classes/component-did-update";
 import ComponentDidUnmount from "./topics/classes/component-did-unmount";
+import Reusability from "./reusability/Reusability";
+import Children from "./reusability/children/Children";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         />
         <Route path="/forms" element={<Form />} />
         <Route path="/api" element={<Api />} />
+        <Route path="/reusability" element={<Reusability />} />
+        <Route path="/reusability/children" element={<Children />} />
         <Route path="/event-listeners" element={<EventListeners />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/classes/basics" element={<Basics />} />

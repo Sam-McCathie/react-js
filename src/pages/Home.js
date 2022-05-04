@@ -1,30 +1,21 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import Links from "../components/Links";
 
 const Home = () => {
+  const links = [
+    {to: "hooks", title: "Hooks"},
+    {to: "conditional-rendering", title: "Conditional Rendering"},
+    {to: "forms", title: "Forms"},
+    {to: "api", title: "Api"},
+    {to: "reusability", title: "Reusability"},
+    {to: "event-listeners", title: "Event Listeners"},
+    {to: "classes", title: "Classes"},
+  ];
+
   return (
     <div>
       <h1>Topics</h1>
-      <ul>
-        <li>
-          <Link to="hooks">Hooks</Link>
-        </li>
-        <li>
-          <Link to="conditional-rendering">Conditional Rendering</Link>
-        </li>
-        <li>
-          <Link to="forms">Forms</Link>
-        </li>
-        <li>
-          <Link to="api">Api</Link>
-        </li>
-        <li>
-          <Link to="event-listeners">Event Listeners</Link>
-        </li>
-        <li>
-          <Link to="classes">Classes</Link>
-        </li>
-      </ul>
+      <Links links={links} />
     </div>
   );
 };
