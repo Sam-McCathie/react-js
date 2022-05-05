@@ -7,6 +7,10 @@ const Reusability = () => {
       to: "/reusability/children",
       title: "Children",
     },
+    {
+      to: "/reusability/higher-order-components",
+      title: "Higher Order Components",
+    },
   ];
 
   return (

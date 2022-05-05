@@ -18,8 +18,10 @@ import ClassComplexState from "./topics/classes/class-complex-state";
 import ComponentDidMount from "./topics/classes/component-did-mount";
 import ComponentDidUpdate from "./topics/classes/component-did-update";
 import ComponentDidUnmount from "./topics/classes/component-did-unmount";
-import Reusability from "./reusability/Reusability";
-import Children from "./reusability/children/Children";
+import Reusability from "./reusability/reusability";
+import Children from "./reusability/children/children";
+import HigherOrderComponents from "./reusability/children/higher-order-components";
+import Basic from "./reusability/children/hoc/basic/basic";
 
 function App() {
   return (
@@ -37,6 +39,14 @@ function App() {
         <Route path="/api" element={<Api />} />
         <Route path="/reusability" element={<Reusability />} />
         <Route path="/reusability/children" element={<Children />} />
+        <Route
+          path="/reusability/higher-order-components"
+          element={<HigherOrderComponents />}
+        />
+        <Route
+          path="/reusability/higher-order-components/basic"
+          element={<Basic />}
+        />
         <Route path="/event-listeners" element={<EventListeners />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/classes/basics" element={<Basics />} />
