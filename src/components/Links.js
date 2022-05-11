@@ -5,26 +5,22 @@ const Links = ({links}) => {
   return (
     <ul>
       {links.map((link) => {
-        return (
+        return !link.nested ? (
+          <li key={link.to}>
+            <Link to={link.to}>{link.title}</Link>
+          </li>
+        ) : (
           <>
-            {!link.nested ? (
-              <li key={link.to}>
-                <Link to={link.to}>{link.title}</Link>
-              </li>
-            ) : (
-              <>
-                <li key={link.to}>{link.title}</li>
-                <ul>
-                  {link.nested.map((link) => {
-                    return (
-                      <li key={link.to}>
-                        <Link to={link.to}>{link.title}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </>
-            )}
+            <li key={link.to}>{link.title}</li>
+            <ul>
+              {link.nested.map((link) => {
+                return (
+                  <li key={link.to}>
+                    <Link to={link.to}>{link.title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
           </>
         );
       })}

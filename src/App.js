@@ -24,51 +24,48 @@ import HigherOrderComponents from "./reusability/children/higher-order-component
 import Basic from "./reusability/children/hoc/basic/basic";
 
 function App() {
+  const routes = [
+    {slug: "/", component: <Home />},
+    {slug: "hooks", component: <Hooks />},
+    {slug: "hooks/useReducer", component: <UseReducer />},
+    {slug: "hooks/useState", component: <UseState />},
+    {slug: "conditional-rendering", component: <ConditionalRendering />},
+    {slug: "forms", component: <Form />},
+    {slug: "api", component: <Api />},
+    {slug: "reusability", component: <Reusability />},
+    {slug: "reusability/children", component: <Children />},
+    {
+      slug: "reusability/higher-order-components",
+      component: <HigherOrderComponents />,
+    },
+    {slug: "reusability/higher-order-components/basic", component: <Basic />},
+    {slug: "event-listeners", component: <EventListeners />},
+    {slug: "classes", component: <Classes />},
+    {slug: "classes/basics", component: <Basics />},
+    {
+      slug: "classes/functional-vs-class",
+      component: <FunctionalVsClass message="I am a prop" />,
+    },
+    {slug: "classes/state/new", component: <ClassStateNew />},
+    {slug: "classes/state/old", component: <ClassStateOld />},
+    {slug: "classes/state/complex", component: <ClassComplexState />},
+    {slug: "classes/component-did-mount", component: <ComponentDidMount />},
+    {slug: "classes/component-did-update", component: <ComponentDidUpdate />},
+    {slug: "classes/component-did-unmount", component: <ComponentDidUnmount />},
+  ];
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" index element={<Home />} />
-        <Route path="/hooks" element={<Hooks />} />
-        <Route path="/hooks/useReducer" element={<UseReducer />} />
-        <Route path="/hooks/useState" element={<UseState />} />
-        <Route
-          path="/conditional-rendering"
-          element={<ConditionalRendering />}
-        />
-        <Route path="/forms" element={<Form />} />
-        <Route path="/api" element={<Api />} />
-        <Route path="/reusability" element={<Reusability />} />
-        <Route path="/reusability/children" element={<Children />} />
-        <Route
-          path="/reusability/higher-order-components"
-          element={<HigherOrderComponents />}
-        />
-        <Route
-          path="/reusability/higher-order-components/basic"
-          element={<Basic />}
-        />
-        <Route path="/event-listeners" element={<EventListeners />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/classes/basics" element={<Basics />} />
-        <Route
-          path="/classes/functional-vs-class"
-          element={<FunctionalVsClass message="I am a prop" />}
-        />
-        <Route path="/classes/state/new" element={<ClassStateNew />} />
-        <Route path="/classes/state/old" element={<ClassStateOld />} />
-        <Route path="/classes/state/complex" element={<ClassComplexState />} />
-        <Route
-          path="/classes/component-did-mount"
-          element={<ComponentDidMount />}
-        />
-        <Route
-          path="/classes/component-did-update"
-          element={<ComponentDidUpdate />}
-        />
-        <Route
-          path="/classes/component-did-unmount"
-          element={<ComponentDidUnmount />}
-        />
+        {routes.map((route) => {
+          return (
+            <Route
+              key={route.slug}
+              path={route.slug}
+              element={route.component}
+            />
+          );
+        })}
       </Routes>
     </BrowserRouter>
   );
