@@ -22,6 +22,7 @@ import Reusability from "./reusability/reusability";
 import Children from "./reusability/children/children";
 import HigherOrderComponents from "./reusability/children/higher-order-components";
 import Basic from "./reusability/children/hoc/basic/basic";
+import UseCase from "./reusability/children/hoc/toggle-example/toggle-example";
 
 function App() {
   const routes = [
@@ -39,6 +40,10 @@ function App() {
       component: <HigherOrderComponents />,
     },
     {slug: "reusability/higher-order-components/basic", component: <Basic />},
+    {
+      slug: "reusability/higher-order-components/toggle-example",
+      component: <UseCase />,
+    },
     {slug: "event-listeners", component: <EventListeners />},
     {slug: "classes", component: <Classes />},
     {slug: "classes/basics", component: <Basics />},

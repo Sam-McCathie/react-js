@@ -7,7 +7,11 @@ import Links from "../../components/Links";
  */
 
 const HigherOrderComponents = () => {
-  const links = [{to: "basic", title: "Basic Example"}];
+  const links = [
+    {to: "basic", title: "Basic example"},
+    {to: "toggle-example", title: "Toggle example"},
+  ];
+
   return (
     <div>
       <h1>Higher Order Components</h1>
