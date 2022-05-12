@@ -11,6 +11,10 @@ const Reusability = () => {
       to: "/reusability/higher-order-components",
       title: "Higher Order Components",
     },
+    {
+      to: "/reusability/render-props",
+      title: "Render Props",
+    },
   ];
 
   return (
