@@ -8,8 +8,8 @@ import Links from "../../components/Links";
 
 const HigherOrderComponents = () => {
   const links = [
-    {to: "basic", title: "Basic example"},
-    {to: "toggle-example", title: "Toggle example"},
+    {to: "basic", title: "Basic HOC example"},
+    {to: "toggle-example", title: "Toggle HOC example"},
   ];
 
   return (

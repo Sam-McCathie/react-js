@@ -20,9 +20,9 @@ import ComponentDidUpdate from "./topics/classes/component-did-update";
 import ComponentDidUnmount from "./topics/classes/component-did-unmount";
 import Reusability from "./reusability/reusability";
 import Children from "./reusability/children/children";
-import HigherOrderComponents from "./reusability/children/higher-order-components";
-import Basic from "./reusability/children/hoc/basic/basic";
-import UseCase from "./reusability/children/hoc/toggle-example/toggle-example";
+import HigherOrderComponents from "./reusability/hoc/higher-order-components";
+import Basic from "./reusability/hoc/basic-hoc/basic";
+import UseCase from "./reusability/hoc/toggle-hoc-example/toggle-example";
 
 function App() {
   const routes = [
