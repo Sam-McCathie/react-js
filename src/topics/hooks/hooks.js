@@ -1,19 +1,20 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Links from "../../components/Links";
 
 const Hooks = () => {
+
+  const links = [
+    {to: "useReducer", title: "useReducer"},
+    {to: "useRef", title: "useRef"},
+    {to: "useState", title: "useState"},
+  ];
+
   return (
     <div>
       <Link to="/">Back/ Home</Link>
       <h1>Hooks</h1>
-      <ul>
-        <li>
-          <Link to="/hooks/useReducer">useReducer</Link>
-        </li>
-        <li>
-          <Link to="/hooks/useState">useState</Link>
-        </li>
-      </ul>
+      <Links links={links}/>
     </div>
   );
 };

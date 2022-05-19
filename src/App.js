@@ -10,6 +10,7 @@ import Classes from "./topics/classes/classes";
 import Hooks from "./topics/hooks/hooks";
 import UseReducer from "./topics/hooks/useReducer";
 import UseState from "./topics/hooks/useState";
+import UseRef from "./topics/hooks/useRef";
 import Basics from "./topics/classes/basics";
 import FunctionalVsClass from "./topics/classes/functional-vs-class";
 import ClassStateNew from "./topics/classes/class-state-new";
@@ -31,6 +32,7 @@ function App() {
     {slug: "hooks", component: <Hooks />},
     {slug: "hooks/useReducer", component: <UseReducer />},
     {slug: "hooks/useState", component: <UseState />},
+    {slug: "hooks/useRef", component: <UseRef/>},
     {slug: "conditional-rendering", component: <ConditionalRendering />},
     {slug: "forms", component: <Form />},
     {slug: "api", component: <Api />},
